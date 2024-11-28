@@ -1,0 +1,119 @@
+/*Feito por Gustavo Bontempo*/
+body{
+	background:url(imgs/fundo.jpg);
+	background-size: cover;
+	font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+#principal{
+	background-color: rgba(255,255,255,0.80);
+	width: 1020px;
+	margin: auto;
+	padding: 15px;
+	border: 3px groove navy;
+	margin-top:15px;
+}
+
+.botaoAceso{
+	background-color: rgb(226,240,217);
+	color: navy;
+	font-weight: bolder;
+}
+
+#menu button{
+	width: 150px;
+	border: 2px solid black;
+	padding: 5px;
+	text-align: center;
+}
+
+.atencao{
+	color: red;
+}
+
+.titTabela{
+	color: navy;
+}
+
+.titDireita{
+	text-align: right;
+}
+
+.numero {
+	text-align:right;
+	width:150px;
+	border:none;
+	color:navy;
+}
+
+/*Escondendo os spinners das caixas de números
+
+Chrome, safari, edge, opera*/
+input::webkit-outer-spin-button, 
+input::webkit-inner-spin-button{
+	-webkit-appearance:none;
+	margin:0;
+}
+/* Firefox */
+input[type=number]{
+	-moz-appearance:textfield;
+}
+
+.quantidade{
+	text-align: right;
+	width: 80px;
+}
+
+#areaCliente, #areaEntrega, #areaPagamento {display: none;}
+
+#areaPJ, #areaPJDoc {display:none;}
+
+label{
+	display: inline-block;
+	width: 175px;
+}
+
+#retirada {display: none;}
+
+.linha{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.coluna {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+}
+
+#areaResumo{
+	font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+	font-size: 12px;
+}
+
+#areaResumo th{
+	color: white;
+	background-color: rgb(67,114,197);
+	border-top-color: black;
+	border-top-style: solid;
+	border-top-width:3px;
+	border-bottom:3px solid black;
+}
+
+#areaResumo .fundoCinza{
+	background-color: silver;
+}
+
+#areaResumo td, #areaResumo th {padding-right:5px;}
+.direita{text-align:right;}
+.subtotal{font-weight:bold;}
+
+#areaResumo .total{
+	color:rgb(50,69,108);
+	font-weight:bold;
+	background-color:plum;
+}
+
