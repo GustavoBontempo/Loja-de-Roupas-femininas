@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html lang="pt-br"> <!--Feito por Gustavo Bontempo-->
+
+<head>
+    <meta charset="utf-8">
+	<title>Cadastro</title>
+	<link rel="stylesheet" type="text/css" href="css/cadastro.css">
+</head>
+
+<body>
+    
+<div id="div1">
+    
+	<script>
+	    let hoje = new Date() 
+		
+		document.write(hoje.getDate() +"/"+
+		(hoje.getMonth()+1) +"/"+
+		hoje.getFullYear())
+	</script>
+
+	<h1><u>Cadastro Básico</u></h1>
+	
+    <form id="form1" action="gravarCliente.php" method="post">
+    <label for="cNome">Nome:</label>
+    <input type="text" id="cNome" name="nome" maxlength="50" placeholder="Digite seu nome (até 50 caracteres)" size="50">
+	<br><br>
+	
+	<label for="nasc">Nascimento:</label>
+	<input type="date" name="dNascimento" id="nasc">
+	<br><br>
+	
+	<fieldset>
+	    <legend>Sexo</legend>
+		<input type="radio" name="sexo" value="M" checked>Masculino
+		<input type="radio" name="sexo" value="F">Feminino
+	</fieldset>
+	<br>
+	
+	<label for="civil">Estado Civil:</label> <select name="ECivil" id="civil">
+	    <option value="S" selected>Solteiro</option>
+		<option value="C">Casado</option>
+		<option value="E">Separado</option>
+		<option value="D">Divorciado</option>
+		<option value="V">Viúvo</option>
+	</select>
+	<br>
+
+    <h3>Dados para contato</h3>
+	
+	<label for="email">E-mail:</label> <input type="email" name="email" id="email" maxlength="50" size="50" placeholder="Ex: contato@gmail.com">
+	<br>
+	
+	<input type="checkbox" name="caixaEmail" value="1" checked>Desejo receber e-mails
+	<br><br>
+	
+	<label for="ddd">Telefone:</label> (<input type="number" name="ddd" id="ddd"  min="0" max="99" placeholder="ddd">)
+	<input type="text" name="numero" maxlength="10">
+	<label for="tel">Tipo:<label> <select name="tipo" id="fone">
+                                        <option value="" selected>Escolha</option>
+	                                    <option value="RE">Residencial</option>
+										<option value="CE">Celular</option>
+										<option value="CO">Comercial</option>
+										<option value="RC">Recados</option>
+                                   </select>
+	<br>
+	<label for="ddd2">Telefone:</label> (<input type="number" name="ddd2" id="ddd2" min="0" max="99" placeholder="ddd">)
+	<input type="text" name="numero2" maxlength="10">
+	<label for="fone2">Tipo:<label> <select name="tipo2" id="fone2">
+	                                    <option value="" selected>Escolha</option>
+	                                    <option value="RE">Residencial</option>
+										<option value="CE">Celular</option>
+										<option value="CO">Comercial</option>
+										<option value="RC">Recados</option>
+                                   </select>
+	<br>						   
+	<label for="ddd3">Telefone:</label> (<input type="number" name="ddd3" id="ddd3" min="0" max="99" placeholder="ddd">)
+	<input type="text" name="numero3" maxlength="10">
+	
+	<label for="fone3">Tipo:<label> <select name="tipo3" id="fone3">
+	                                    <option value="" selected>Escolha</option>
+	                                    <option value="RE">Residencial</option>
+										<option value="CE">Celular</option>
+										<option value="CO">Comercial</option>
+										<option value="RC">Recados</option>
+                                   </select>
+	<hr>
+	<h3>Observações</h3>
+	
+	<textarea name="obs" rows="6" cols="80" placeholder="Insira suas observações aqui..."></textarea>
+	<br>
+	
+	<input type="submit" value="Enviar Dados" id="botao">
+	<input type="reset" value="Limpar Dados" id="limpar">
+								   
+    </form>
+</div>
+</body>
+</html>
