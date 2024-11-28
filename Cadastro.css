@@ -1,0 +1,85 @@
+body{
+	font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	background: url('../imgs/biblioteca.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#div1{
+	width: 700px;
+	background: rgba( 255,255,255,0.6);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+	margin: auto;
+}
+
+#form1{
+	border: 5px groove red;
+	padding: 10px;
+	border-radius: 10px;
+}
+input:hover{
+	background-color: #F0FFF0;
+}
+
+h1{
+	text-align: center;
+}
+
+fieldset{
+	width: 250px;
+}
+
+textarea:hover{
+	background-color: #F0FFFF;
+}
+
+#botao{
+	color: white;
+	background-color: MediumBlue;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 800;
+	font-size: lem;
+	text-transform: uppercase;
+	color: fff;
+	border-radius: 6px;
+	margin: 10px;
+	padding: 7px;
+	background-size: 200% auto;
+	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+	background-image: linear-gradient(to right, #0000CD 0%, #7B68EE 50%, #0000CD);
+	transition: 0.5s;
+}
+
+#limpar{
+	color: black;
+	background-color: pink;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 800;
+	font-size: lem;
+	text-transform: uppercase;
+	color: fff;
+	border-radius: 6px;
+	margin: 10px;
+	padding: 7px;
+	background-size: 200% auto;
+	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+	background-image: linear-gradient(to right, #FFC0CB 0%, #DB7093 50%, #FFC0CB);
+	transition: 0.5s;
+}
+
+#botao:hover{
+	background-position: right center;
+}
+
+#limpar:hover{
+	background-position: right center;
+}
+
+textarea{
+	color: SaddleBrown;
+}
