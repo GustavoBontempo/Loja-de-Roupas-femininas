@@ -1,0 +1,46 @@
+/* Feito por Gustavo Bontempo*/
+* {
+  background:transparent !important;
+  color:#000 !important;
+  text-shadow:none !important;
+  filter:none !important;
+  -ms-filter:none !important;
+}
+
+body {
+  margin:0;
+  padding:0;
+  line-height: 1.4em;
+  font: 12pt Georgia, "Times New Roman", Times, serif;
+}
+h1 {  font-size: 24pt; page-break-after:avoid;}
+h2 {  font-size: 18pt; page-break-after:avoid;}
+h3 {  font-size: 14pt; page-break-after:avoid;}
+p a {  word-wrap: break-word; }
+ul, img { page-break-inside: avoid; }
+
+/* exibe áreas escondidas*/
+#areaItens, #areaCliente , #areaEntrega, #areaPagamento {
+  display:block !important;
+}
+
+/* Escondendo a área do menu e os botões */
+#menu, input[type=button] {display:none;}
+
+/* Escondendo a imagem do produto e o rodapé da Aba 1 da impressão */
+#areaImagem, #rodapeDetalhe {display:none;}
+
+/* Removendo as bordas de elementos de dados*/
+input, select { border : none ; }
+
+/* Inserindo bordas nas tabelas*/
+table, th, td {border:1px solid black !important;}
+
+/* Esconde cabeçalho e rodapé da página*/
+@page{size:auto;}
+
+/* a classe no-print foi criada para esconder aquilo que a gente não quer imprimir*/
+.no-print {display:none;}
+
+/* Exibindo o logotipo na impressão */
+#logoImpressao { display:block;}
